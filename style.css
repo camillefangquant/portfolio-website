@@ -595,3 +595,21 @@ h1, h2, h3, h4 {
         padding: 70px 0;
     }
 }
+
+/* 3D Icon Styling */
+.skill-category h3 {
+    display: flex;
+    flex-direction: column; /* Icon ကို စာသားရဲ့အပေါ်မှာ ထားဖို့ */
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+lord-icon {
+    margin-left: -5px; /* Icon နေရာ အနည်းငယ်ညှိရန် */
+}
+
+.skill-category:hover lord-icon {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
