@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* 3D Icon & Service Styling အပိုဆောင်း */
+        /* အပိုဆောင်း 3D Styling */
         .icon-3d {
             background: linear-gradient(145deg, #00ffcc, #0088ff);
             -webkit-background-clip: text;
@@ -17,20 +17,21 @@
             margin-bottom: 20px;
             display: inline-block;
         }
-        .service-list { list-style: none; padding: 0; }
+        .service-list { list-style: none; padding: 0; margin-top: 20px; }
         .service-list li { 
             margin-bottom: 15px; 
             display: flex; 
-            align-items: center; 
+            align-items: flex-start; 
             gap: 12px;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
+            line-height: 1.5;
         }
-        .service-list i { color: #00ffcc; font-size: 1.2rem; }
+        .service-list i { color: #00ffcc; margin-top: 5px; }
         .contact-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.2fr 0.8fr;
             gap: 50px;
-            margin-top: 40px;
+            margin-top: 30px;
         }
         @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
     </style>
@@ -57,6 +58,7 @@
                     <h2 class="hero-subtitle">Blockchain Developer | Risk Management Specialist | Data Scientist</h2>
                     <p class="hero-description">
                         Building resilient financial systems through sophisticated data analytics and decentralized finance.
+                        My philosophy: <em>"Protecting against loss is more important than seeking profit."</em>
                     </p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">View My Projects</a>
@@ -64,7 +66,27 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="profile.jpg" alt="Camille Profile">
+                    <img src="profile.jpg" alt="Camille (Mei Fang)">
+                    <div class="image-border"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a Blockchain Developer, Data Scientist, and Risk Management Specialist with a focus on building resilient financial systems. Since 2018, I have been bridging the gap between sophisticated data analytics and the evolving world of decentralized finance.</p>
+                    <p>With an MBA from CEIBS Shanghai, my approach to the markets is guided by a core philosophy: "Protecting against loss is more important than seeking profit."</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <h3>Education</h3>
+                            <p><strong>MBA</strong> – CEIBS Shanghai (2022)</p>
+                            <p><strong>B.Sc in Finance</strong></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,7 +102,7 @@
                     <ul>
                         <li>Solidity / Rust</li>
                         <li>Smart Contract Architecture</li>
-                        <li>Web3.js / Ethers.js</li>
+                        <li>DeFi Protocols</li>
                     </ul>
                 </div>
                 <div class="skill-category">
@@ -110,24 +132,45 @@
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="project1.jpg" alt="Project 1" class="project-img">
+                    <div class="project-image">
+                        <img src="project1.jpg" alt="Algorithmic Trading">
+                    </div>
                     <div class="project-content">
                         <h3>Algorithmic Trading Model</h3>
-                        <p>ML model to predict price fluctuations of BTC & ETH.</p>
+                        <p>Machine Learning model to predict short-term price fluctuations of BTC & ETH.</p>
+                        <div class="project-tech"><span>Python</span><span>TensorFlow</span></div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="project2.jpg" alt="Project 2" class="project-img">
+                    <div class="project-image">
+                        <img src="project2.jpg" alt="Alpha Factors">
+                    </div>
                     <div class="project-content">
                         <h3>Alpha Factors Research</h3>
-                        <p>Identifying Alpha Factors from On-chain data.</p>
+                        <p>Identifying "Alpha Factors" from Blockchain data to predict future returns.</p>
+                        <div class="project-tech"><span>Python</span><span>PostgreSQL</span></div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Analysis</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="project3.jpg" alt="Project 3" class="project-img">
+                    <div class="project-image">
+                        <img src="project3.jpg" alt="VaR Framework">
+                    </div>
                     <div class="project-content">
-                        <h3>VaR Framework</h3>
-                        <p>Risk calculation and stress testing for portfolios.</p>
+                        <h3>VaR & Stress Testing</h3>
+                        <p>Framework to calculate potential loss and perform market stress testing.</p>
+                        <div class="project-tech"><span>Python</span><span>NumPy</span></div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,21 +184,20 @@
                 <div class="contact-info">
                     <h3>What I Can Do For You</h3>
                     <ul class="service-list">
-                        <li><i class="fas fa-check-circle"></i> <div><strong>Quantitative Research:</strong> I find market alpha using advanced data analytics.</div></li>
-                        <li><i class="fas fa-check-circle"></i> <div><strong>Risk Audit:</strong> I perform stress tests on your financial protocols.</div></li>
-                        <li><i class="fas fa-check-circle"></i> <div><strong>ML Systems:</strong> I build custom predictive models for digital assets.</div></li>
-                        <li><i class="fas fa-check-circle"></i> <div><strong>Strategy Development:</strong> Designing robust algorithmic trading frameworks.</div></li>
+                        <li><i class="fas fa-check-circle"></i> <div><strong>Quantitative Research:</strong> Identification of market alpha using statistical factors.</div></li>
+                        <li><i class="fas fa-check-circle"></i> <div><strong>Risk Audit:</strong> Stress testing frameworks and VaR systems for DeFi.</div></li>
+                        <li><i class="fas fa-check-circle"></i> <div><strong>ML Integration:</strong> Building predictive models for crypto assets.</div></li>
+                        <li><i class="fas fa-check-circle"></i> <div><strong>Portfolio Optimization:</strong> Designing robust risk-adjusted strategies.</div></li>
                     </ul>
-                    <p style="margin-top: 20px; color: #8892b0;">Email: leilaavanportfolio@gmail.com</p>
+                    <p style="margin-top: 30px;"><i class="fas fa-envelope"></i> leilaavanportfolio@gmail.com</p>
                 </div>
-
                 <div class="contact-form">
                     <h3>Send a Request</h3>
                     <form id="messageForm">
                         <input type="text" placeholder="Your Name" required>
                         <input type="email" placeholder="Your Email" required>
-                        <textarea placeholder="Tell me about your project or what you need..." rows="5" required></textarea>
-                        <button type="submit" class="btn btn-primary">Submit Message</button>
+                        <textarea placeholder="How can I help you?" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Submit Request</button>
                     </form>
                 </div>
             </div>
