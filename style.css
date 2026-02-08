@@ -595,3 +595,36 @@ h1, h2, h3, h4 {
         padding: 70px 0;
     }
 }
+/* 3D Icon Style */
+.icon-3d {
+    background: linear-gradient(145deg, #00ffcc, #0088ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 4px 6px rgba(0,255,204,0.4));
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.skill-category:hover .icon-3d {
+    transform: translateZ(20px) scale(1.1);
+}
+
+/* Service List Style */
+.service-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-list i {
+    color: #00ffcc;
+}
+
+.mt-4 { margin-top: 1.5rem; }
