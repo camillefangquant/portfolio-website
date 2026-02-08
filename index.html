@@ -3,10 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camille | Blockchain & Quant Specialist</title>
+    <title>Camille (Mei Fang) | Blockchain & Risk Specialist</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 3D Icons Effect */
+        .icon-3d {
+            background: linear-gradient(135deg, #00ffcc, #0088ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(3px 5px 8px rgba(0,255,204,0.4));
+            margin-bottom: 20px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .skill-category:hover .icon-3d { 
+            transform: translateY(-10px) perspective(500px) translateZ(30px); 
+        }
+
+        /* Contact Section Grid */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 12px;
+            border-top: 2px solid #00ffcc;
+        }
+
+        .info-box h3 { color: #00ffcc; margin-bottom: 20px; }
+        .info-list { list-style: none; padding: 0; }
+        .info-list li { 
+            margin-bottom: 12px; 
+            display: flex; 
+            align-items: flex-start; 
+            gap: 12px; 
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        .info-list i { color: #00ffcc; margin-top: 4px; }
+
+        @media (max-width: 768px) { .contact-container { grid-template-columns: 1fr; } }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -22,36 +68,75 @@
         </div>
     </nav>
 
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Camille <span class="highlight">(美芳)</span></h1>
+                    <h2 class="hero-subtitle">Blockchain Developer | Risk Management Specialist | Data Scientist</h2>
+                    <p class="hero-description">Building resilient financial systems through data analytics and DeFi. My philosophy: "Protecting against loss is more important than seeking profit."</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="profile.jpg" alt="Camille Profile">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I am a professional with an MBA from CEIBS Shanghai, specializing in the intersection of Blockchain, Data Science, and Quantitative Finance since 2018.</p>
+            </div>
+        </div>
+    </section>
+
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">Technical Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <i class="fas fa-cubes fa-3x icon-3d"></i>
+                    <i class="fas fa-database fa-3x icon-3d"></i>
+                    <h3>Data Science & ML</h3>
+                    <ul><li>Python (Pandas, ML)</li><li>Predictive Modeling</li></ul>
+                </div>
+                <div class="skill-category">
+                    <i class="fas fa-link fa-3x icon-3d"></i>
                     <h3>Blockchain Dev</h3>
                     <ul><li>Solidity / Rust</li><li>Smart Contracts</li></ul>
                 </div>
                 <div class="skill-category">
-                    <i class="fas fa-brain fa-3x icon-3d"></i>
-                    <h3>Data Science</h3>
-                    <ul><li>Python / ML</li><li>Predictive Modeling</li></ul>
-                </div>
-                <div class="skill-category">
-                    <i class="fas fa-shield-halved fa-3x icon-3d"></i>
+                    <i class="fas fa-chart-line fa-3x icon-3d"></i>
                     <h3>Risk & Quant</h3>
-                    <ul><li>VaR / Stress Testing</li><li>Portfolio Optimization</li></ul>
+                    <ul><li>VaR & Stress Testing</li><li>Portfolio Optimization</li></ul>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card"><img src="project1.jpg"><h3>Algorithmic Trading</h3></div>
+                <div class="project-card"><img src="project2.jpg"><h3>Alpha Factors</h3></div>
+                <div class="project-card"><img src="project3.jpg"><h3>VaR Framework</h3></div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Let's Collaborate</h2>
-            <div class="collaboration-grid">
-                <div class="offer-box">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-container">
+                <div class="info-box">
                     <h3>What I Can Offer</h3>
-                    <ul class="service-list">
+                    <ul class="info-list">
                         <li><i class="fas fa-check-circle"></i> Quantitative Strategy Development</li>
                         <li><i class="fas fa-check-circle"></i> Smart Contract Security Auditing</li>
                         <li><i class="fas fa-check-circle"></i> Risk Management Frameworks (VaR)</li>
@@ -59,9 +144,9 @@
                         <li><i class="fas fa-check-circle"></i> DeFi Protocol Integration</li>
                     </ul>
                 </div>
-                <div class="offer-box">
+                <div class="info-box">
                     <h3>Why Partner With Me?</h3>
-                    <ul class="service-list">
+                    <ul class="info-list">
                         <li><i class="fas fa-star"></i> Risk-First Professional Philosophy</li>
                         <li><i class="fas fa-star"></i> MBA-Backed Business Insights</li>
                         <li><i class="fas fa-star"></i> 100% Data-Driven Decision Making</li>
@@ -70,12 +155,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="contact-footer">
-                <p>Email: leilaavanportfolio@gmail.com</p>
-            </div>
+            <p style="margin-top: 30px; text-align: center;">Email: leilaavanportfolio@gmail.com</p>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <footer class="footer"><div class="container"><p>&copy; 2024 Camille. All rights reserved.</p></div></footer>
 </body>
 </html>
